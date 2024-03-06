@@ -16,18 +16,19 @@ then
 fi
 
 # [TASK 1]
-targetDirectory=
-destinationDirectory=
+targetDirectory=$1
+destinationDirectory=$2
 
 # [TASK 2]
-echo ""
-echo ""
+echo "$1"
+echo "$2"
 
 # [TASK 3]
-currentTS=``
+currentTS=`date +%s`
 
 # [TASK 4]
-backupFileName=""
+backupFileName="backup-${currentTS}.tar.gz"
+echo $backupFileName
 
 # We're going to:
   # 1: Go into the target directory
