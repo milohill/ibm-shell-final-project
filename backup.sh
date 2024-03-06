@@ -28,7 +28,6 @@ currentTS=`date +%s`
 
 # [TASK 4]
 backupFileName="backup-${currentTS}.tar.gz"
-echo $backupFileName
 
 # We're going to:
   # 1: Go into the target directory
@@ -38,11 +37,11 @@ echo $backupFileName
 # To make things easier, we will define some useful variables...
 
 # [TASK 5]
-origAbsPath=``
+origAbsPath=`pwd`
 
 # [TASK 6]
-cd # <-
-destDirAbsPath=``
+cd ${2}
+destDirAbsPath=`pwd`
 
 # [TASK 7]
 cd # <-
