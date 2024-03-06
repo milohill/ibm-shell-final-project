@@ -49,7 +49,6 @@ cd ${targetDirectory}
 
 # [TASK 8]
 yesterdayTS=$((${currentTS} - 24 * 60 * 60))
-echo ${yesterdayTS}
 
 declare -a toBackup
 
@@ -63,7 +62,7 @@ do
 done
 
 # [TASK 12]
-
+tar -czf ${backupFileName} ${toBackup[@]}
 # [TASK 13]
-
+mv ${backupFileName} ${destDirAbsPath}
 # Congratulations! You completed the final project for this course!
